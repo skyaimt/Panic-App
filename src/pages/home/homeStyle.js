@@ -17,7 +17,11 @@ const styles = StyleSheet.create({
   },
   footerView: {
   	flex: 1,
-  }
- 
+  },
+  drawer: {
+    shadowColor: '#000000',
+    shadowOpacity: 0.8,
+    shadowRadius: 3
+  },
 });
 module.exports = styles;

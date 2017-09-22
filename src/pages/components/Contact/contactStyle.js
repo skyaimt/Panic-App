@@ -3,17 +3,16 @@ import {
   Dimensions,
   Platform,
 } from 'react-native';
-import * as color from '../../../utils/color';
-import * as Family from '../../../utils/fontFamily';
 
 const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection:'row',
-    backgroundColor: color.HEADER,
-    justifyContent: 'space-between'
+    alignItems: 'center',
+    flexDirection: 'row',
   },
- 
+  subContainer: {
+  	flexDirection: 'row',
+  }
 });
 module.exports = styles;

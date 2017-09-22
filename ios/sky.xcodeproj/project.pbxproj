@@ -41,6 +41,7 @@
 		89C92278822B4CC5AB518C4B /* libRNAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B338C3E230C94A1C970F98DC /* libRNAudio.a */; };
 		A4C6F2D98A114BA884F2CBA3 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DD972A1F1D4DE383263EF7 /* libRNSound.a */; };
 		56275BE58C5944A68F8E4895 /* libRCTContacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5C3C58A1DA45E581EF688B /* libRCTContacts.a */; };
+		0F1E7D8541294EA490A7FDEA /* libRNLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEE031476B84B3E9C5D4D04 /* libRNLocation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,6 +273,8 @@
 		63DD972A1F1D4DE383263EF7 /* libRNSound.a */ = {isa = PBXFileReference; name = "libRNSound.a"; path = "libRNSound.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		5ABA486686BE4D30BA4B6A6D /* RCTContacts.xcodeproj */ = {isa = PBXFileReference; name = "RCTContacts.xcodeproj"; path = "../node_modules/react-native-contacts/ios/RCTContacts.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		FD5C3C58A1DA45E581EF688B /* libRCTContacts.a */ = {isa = PBXFileReference; name = "libRCTContacts.a"; path = "libRCTContacts.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		03BB3FEDBAAC46879AD086BA /* RNLocation.xcodeproj */ = {isa = PBXFileReference; name = "RNLocation.xcodeproj"; path = "../node_modules/react-native-location/RNLocation.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		1BEE031476B84B3E9C5D4D04 /* libRNLocation.a */ = {isa = PBXFileReference; name = "libRNLocation.a"; path = "libRNLocation.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +307,7 @@
 				89C92278822B4CC5AB518C4B /* libRNAudio.a in Frameworks */,
 				A4C6F2D98A114BA884F2CBA3 /* libRNSound.a in Frameworks */,
 				56275BE58C5944A68F8E4895 /* libRCTContacts.a in Frameworks */,
+				0F1E7D8541294EA490A7FDEA /* libRNLocation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +480,7 @@
 				2FDAEB24E9E64A6BA0520654 /* RNAudio.xcodeproj */,
 				20BABB83BDA64757A4F75D24 /* RNSound.xcodeproj */,
 				5ABA486686BE4D30BA4B6A6D /* RCTContacts.xcodeproj */,
+				03BB3FEDBAAC46879AD086BA /* RNLocation.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1004,6 +1009,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1012,6 +1018,7 @@
 					"$(SRCROOT)/../node_modules/react-native-audio/ios",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
+					"$(SRCROOT)/../node_modules/react-native-location",
 				);
 			};
 			name = Debug;
@@ -1033,6 +1040,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1041,6 +1049,7 @@
 					"$(SRCROOT)/../node_modules/react-native-audio/ios",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
+					"$(SRCROOT)/../node_modules/react-native-location",
 				);
 			};
 			name = Release;
@@ -1067,6 +1076,7 @@
 					"$(SRCROOT)/../node_modules/react-native-audio/ios",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
+					"$(SRCROOT)/../node_modules/react-native-location",
 				);
 			};
 			name = Debug;
@@ -1092,6 +1102,7 @@
 					"$(SRCROOT)/../node_modules/react-native-audio/ios",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
+					"$(SRCROOT)/../node_modules/react-native-location",
 				);
 			};
 			name = Release;
@@ -1122,6 +1133,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1130,6 +1142,7 @@
 					"$(SRCROOT)/../node_modules/react-native-audio/ios",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
+					"$(SRCROOT)/../node_modules/react-native-location",
 				);
 			};
 			name = Debug;
@@ -1160,6 +1173,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1168,6 +1182,7 @@
 					"$(SRCROOT)/../node_modules/react-native-audio/ios",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
+					"$(SRCROOT)/../node_modules/react-native-location",
 				);
 			};
 			name = Release;
@@ -1193,6 +1208,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -1217,6 +1233,7 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};

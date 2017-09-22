@@ -7,20 +7,22 @@ import {
 } from 'react-native';
 
 import styles from './HeaderStyle'
-import * as images from '../../../utils/const'
 
 export default class PanicDemo extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View>
+        <View style={styles.leftIconStyle}>
+          <TouchableOpacity onPress={this.props.leftIconPress}>
+            <Image source={this.props.leftIcon} style={styles.leftIcon} />
+          </TouchableOpacity>
         </View>
-        <View>
-        	<Text style={styles.title}>Help Us</Text>
+        <View  style={styles.titleStyle}>
+        	<Text style={styles.title}>{this.props.title}</Text>
         </View>
-        <View>
+        <View  style={styles.leftIconStyle}>
         	<TouchableOpacity>
-        		<Image source={images.SETTING} />
+        		<Image source={this.props.rightIcon} style={styles.leftIcon}/>
         	</TouchableOpacity>
         </View>
       </View>
