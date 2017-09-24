@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
   addImage: {
     height: 30,
     width: 30,
+    marginLeft: 9,
   },
   textView: {
     margin: 10,

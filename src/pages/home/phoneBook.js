@@ -37,3 +37,4 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('sky', () => PanicDemo);
+(input) => this.setState({input: input})

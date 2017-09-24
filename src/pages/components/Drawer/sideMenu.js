@@ -13,10 +13,10 @@ export default class SideMenu extends Component {
       value: [
         { name: 'Home', menuClick: this.props.onHome, images: images.HOME },
         { name: 'Setting', menuClick: this.props.onSetting, images: images.HOME },
-        { name: 'Message', menuClick: this.props.onSetting, images: images.HOME },
+        { name: 'Whatsapp', menuClick: this.props.onWhatsapp, images: images.HOME },
       ],
       valueMenu: [
-        { name: 'Whatsapp', menuClick: this.props.onSetting, images: images.HOME },
+        { name: 'Message', menuClick: this.props.onSetting, images: images.HOME },
         { name: 'Gmail', menuClick: this.props.onSetting, images: images.HOME },
       ],
 

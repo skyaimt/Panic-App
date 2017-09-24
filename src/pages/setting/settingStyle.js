@@ -3,6 +3,8 @@ import {
   Dimensions,
   Platform,
 } from 'react-native';
+import * as color from '../../utils/color';
+import * as Family from '../../utils/fontFamily';
 
 const { width, height } = Dimensions.get('window');
 const styles = StyleSheet.create({
@@ -13,6 +15,19 @@ const styles = StyleSheet.create({
   headerView: {
     flexDirection: 'row',
     height: height / 10,
+  },
+  buttonView: {
+    backgroundColor: color.NEXTTEXT,
+    height: height / 12,
+    width: width / 1.2,
+    alignItems: 'center',
+    alignSelf: 'center',
+    justifyContent: 'center',
+  },
+  buttonText: {
+    color: '#fff',
+    fontFamily: Family.REGULAR,
+    fontSize: 18,
   },
   middleView: {
     height: height / 1.2,
@@ -57,6 +72,13 @@ const styles = StyleSheet.create({
   ModalView: {
     height: height / 1.3,
     width: width / 1.3,
+  },
+  scrollView: {
+   backgroundColor: '#fff',
+  },
+  phoneList: {
+    margin: 10,
   }
+    
 });
 module.exports = styles;

@@ -12,11 +12,10 @@ import styles from './InputFieldStyle'
 import * as images from '../../../utils/const';
 
 export default class PanicDemo extends Component {
-   watchID: ?number = null;
+  watchID: ?number = null;
   constructor(props) {
     super(props);
     this.state = {
-      input: '',
     }
   }
   render() {
@@ -31,8 +30,9 @@ export default class PanicDemo extends Component {
           </TouchableOpacity>
           <TextInput
             style={styles.inputField}
-            onChangeText={(input) => this.setState({input: input})}
+            onChangeText={this.props.onChangeText}
             value={this.props.input}
+            keyboardType={this.props.keyboardType}
             placeholder= {this.props.placeholder}
             underlineColorAndroid='rgba(0,0,0,0)'
           />

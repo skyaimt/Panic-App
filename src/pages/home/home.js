@@ -22,7 +22,6 @@ import Communications from 'react-native-communications';
 import RNImmediatePhoneCall from 'react-native-immediate-phone-call';
 import Recording from './recording'
 import Camera from 'react-native-camera';
-import RNFlash from 'react-native-flash';
 import Contacts from 'react-native-contacts'
 import PhoneBook from './phoneBook';
 import Header from '../components/Header/Header';
@@ -61,6 +60,7 @@ export default class PanicDemo extends NavigatorHeader {
           ref={(ref) => this._drawer = ref}
           content={<SideMenu 
             onSetting={() => { this.navigateTo('Setting'); }}
+            onWhatsapp={() => { this.navigateTo('whatsapp'); }}
            />}
           type="overlay"
           tapToClose={true}
@@ -72,9 +72,6 @@ export default class PanicDemo extends NavigatorHeader {
             main: { opacity:(2-ratio)/2 }
           })}
         >
-          <StatusBar
-           hidden={true}
-          />
           <View style={styles.container}>
             <View style={styles.headerView}>
               <Header leftIcon={images.DRAWABLE} title="TITLE" leftIconPress= {this.openControlPanel} />
