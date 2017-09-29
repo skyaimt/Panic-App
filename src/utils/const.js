@@ -5,3 +5,7 @@ export const ACCOUNT = require('../images/account.png');
 export const CROSS = require('../images/cross.png');
 export const BACKGROUND = require('../images/background.png');
 export const ADD = require('../images/add.png');
+export const COPY = require('../images/copy.png');
+export const LIKE = require('../images/like.png');
+export const LIKED = require('../images/liked.png');
+export const SHARE = require('../images/share.png');

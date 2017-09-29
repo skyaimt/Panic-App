@@ -9,6 +9,7 @@ import {
   TextInput,
 } from 'react-native';
 import styles from './statusViewStyle';
+import * as images from '../../../../utils/const';
 
 export default class StatusView extends Component {
 
@@ -21,17 +22,17 @@ export default class StatusView extends Component {
         <View style={styles.copylikeView}>
           <TouchableOpacity onPress={this.likeImage}>
             <View style={styles.likeView}>
-              <Image source={this.props.like}/>
+              <Image source={images.COPY} style={styles.copyShareImage} />
             </View>
           </TouchableOpacity>
           <TouchableOpacity onPress={this.likeImage}>
             <View style={styles.likeView}>
-              <Image source={this.props.copy}/>
+              <Image source={images.LIKE} style={styles.copyShareImage} />
             </View>
           </TouchableOpacity>
           <TouchableOpacity onPress={this.likeImage}>
             <View style={styles.likeView}>
-              <Image source={this.props.share}/>
+              <Image source={images.SHARE} style={styles.copyShareImage} />
             </View>
           </TouchableOpacity>
         </View>

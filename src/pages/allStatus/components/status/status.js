@@ -7,11 +7,13 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
+  ScrollView,
 } from 'react-native';
 import styles from './statusStyle';
 import * as images from '../../../../utils/const';
 import NavigatorHeader from '../../../../utils/navigatorHeader';
 import StatusView from '../statusView/statusView';
+import * as StatusConst from '../../../../utils/statusConst';
 
 export default class Status extends NavigatorHeader {
 static navigationOptions = NavigatorHeader.navigationOptions;
@@ -22,17 +24,23 @@ static navigationOptions = NavigatorHeader.navigationOptions;
     }
   }
 
+  getStatus() {
+    return StatusConst.MOTIVATIONSTATUS.map((data, i) => {
+        return (
+          <StatusView key={i} status={data.status} />
+        );
+    });
+  } 
+
   render() {
     return (
       <View style={styles.container}>
         <Image source = { images.BACKGROUND } style={styles.subContainer} >
           <View>
 	          <View>
-	          	<StatusView status="whats app status will appear here"
-                like={images.HOME}
-                share={images.HOME}
-                copy={images.HOME}
-              />
+              <ScrollView>
+	          	  {this.getStatus()}
+              </ScrollView>
 	          </View>
           </View>
         </Image>

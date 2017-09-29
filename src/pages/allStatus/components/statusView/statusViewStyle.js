@@ -14,18 +14,24 @@ const styles = StyleSheet.create({
     width: width - 10,
     margin: 5,
     borderWidth: 1,
+    borderBottomWidth: 0,
     borderColor: '#dcdcdc',
     marginBottom: 0,
   },
   copylikeView: {
     flexDirection: 'row',
-    height: width / 5,
+    height: width / 12,
     width: width - 10,
     margin: 5,
     marginTop: 0,
     borderWidth: 1,
+    borderTopWidth: 0,
     borderColor: '#dcdcdc',
-    justifyContent: 'space-between',
-  }
+    justifyContent: 'space-around',
+  },
+  copyShareImage: {
+    height: 25,
+    width: 25,
+  },
 });
 module.exports = styles;
